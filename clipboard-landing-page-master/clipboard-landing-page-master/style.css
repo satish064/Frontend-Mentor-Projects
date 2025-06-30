@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+}
+
+.paragraph {
+    color: hsl(201, 11%, 66%);
+}
+
+.heading {
+    color: hsl(210, 10%, 33%);
+}
+
+.section-1,
+.section-4,
+.section-5,
+.section-8,
+.section-9 {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sectionOneContainer {
+    width: 600px;
+}
+
+.sectionOneContainer img {
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 110px;
+}
+
+.section-1 h1 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-1 p {
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+
+.download-btn {
+    all: unset;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-iso {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0 4px #219F88;
+    margin-right: 15px;
+}
+
+.btn-iso:hover {
+    background-color: #5DCCBB;
+}
+
+
+.btn-mac {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 4px #5161D9;
+}
+
+.btn-mac:hover {
+    background-color: #8896FF;
+}
+
+
+
+/* Section - 2 */
+
+.track {
+    min-height: 30vh;
+}
+
+.track .sectionOneContainer .heading {
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.track .sectionOneContainer .paragraph {
+    margin: 0;
+}
+
+.section-3 {
+    display: flex;
+    margin-top: 70px;
+}
+
+.section-3 img {
+    position: relative;
+    right: 26px;
+    height: 500px;
+}
+
+.section-3 .apple-container {
+    width: 300px;
+    margin-left: 50px;
+}
+
+.section-3 .apple-container h3 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.section-3 .apple-container p {
+    line-height: 26px;
+}
+
+/* section 4 */
+
+.section-4 {
+    min-height: 40vh;
+    flex-direction: column;
+}
+
+.section-4 div {
+    margin-block: 100px;
+    width: 600px;
+}
+
+.section-4 h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.section-4 p {
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.section-4 img {
+    width: 700px;
+}
+
+/* section 5 */
+
+.section-5 {
+    min-height: 30vh;
+}
+
+.section-5 div {
+    width: 600px;
+}
+
+.section-5 h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* section-6 */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+}
+
+.item-container {
+    display: flex;
+    width: 960px;
+    text-align: center;
+    gap: 20px;
+}
+
+.item-container img {
+    width: 40px;
+}
+
+.item-container h4 {
+    margin: 25px 0 15px 0;
+    font-size: 19px;
+}
+
+.item-container p {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+/* section-7 */
+
+.section-7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 90px;
+
+}
+
+.section-7 div {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-7 div img {
+    width: 130px;
+}
+
+/* section-8 */
+
+.section-8 {
+    min-height: 0;
+    margin-bottom: 100px;
+}
+
+.section-8 .section-8-container {
+    width: 600px;
+}
+
+.section-8 .section-8-container h4 {
+    font-size: 1.8rem;
+}
+
+.section-8 p {
+    line-height: 25px;
+    margin: 25px 0 40px 0;
+}
+
+/* nav */
+
+.section-9 {
+    min-height: 140px;
+    background-color: #F5F6F8;
+}
+
+.section-9 .footerLogo {
+    height: 50px;
+    width: 50px;
+}
+
+.section-9 .socialMeadiaApps {
+    display: flex;
+    gap: 13px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(201, 11%, 66%);
+}
+
+a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.changeColor:hover {
+    fill: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+
+.section-9 .section-9-container {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    margin-left: -140px;
+}
+
+@media(max-width:500px) {
+    body {
+        background-image: url(./images/bg-header-mobile.png);
+        background-size: contain;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    li {
+        margin-block: 45px;
+    }
+
+    .item {
+        margin-top: 40px;
+    }
+
+    .btn-iso {
+        margin-bottom: 25px;
+    }
+
+    .sectionOneContainer img {
+        margin-top: 110px;
+        margin-bottom: 60px;
+    }
+
+    .section-1 h1 {
+        font-size: 31px;
+    }
+
+    .download-btn {
+        display: inline-block;
+        width: 100%;
+        padding: 13px 0;
+        font-size: 18px;
+    }
+
+    .section-3 {
+        display: inline-block;
+    }
+
+    .section-3 .apple-container {
+        width: auto;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .section-3 img,
+    .section-4 img {
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+
+    .section-4 div {
+        margin-block: 100px;
+        width: auto;
+    }
+
+    .section-4 h3 {
+        margin-top: 40px;
+    }
+
+    .item-container {
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+
+    .section-7 {
+        margin-block: 120px;
+    }
+
+    .section-7 div {
+        width: auto;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .section-8 .section-8-container {
+        margin: 50px 0 50px 0;
+    }
+
+    .section-9 {
+        height: auto;
+    }
+
+    .section-9 .section-9-container {
+        width: auto;
+        flex-direction: column;
+        margin-block: 60px;
+    }
+
+    .nav {
+        display: inline-block;
+        width: auto;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+
+    .section-9 .socialMeadiaApps {
+        gap: 45px;
+    }
+
+    .track .sectionOneContainer .heading {
+        margin-top: 110px;
+    }
+
+}
