@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body class="bg-Purple-100">
+  <main class="flex flex-col items-center justify-center font-WorkSans  ">
+    <section class="w-full">
+      <img src="./assets/images/background-pattern-desktop.svg" alt="deskop-background-img" class="md:block hidden">
+      <img src="./assets/images/background-pattern-mobile.svg" alt="mobile-background" class="md:hidden block bg-cover w-full">
+    </section>
+    <section class="bg-White p-6 lg:p-8 lg:w-[576px] rounded-[8px] shadow-md mt-[-130px] mx-8 mb-[125px]">
+      <div class="flex items-center justify-start gap-4 mb-6 ">
+        <img src="./assets/images/icon-star.svg" alt="star">
+        <h1 class="text-3xl lg:text-6xl font-semibold">FAQs</h1>
+      </div>
+      <div id="content-container " class="space-y-5 ">
+        <div class="space-y-5">
+          <div class="sign flex justify-between items-center">
+            <p class="font-semibold lg:text-[18px] text-Purple-950 hover:text-hover cursor-pointer">What is Frontend
+              Mentor, and how will it help me?</p>
+            <img  src="./assets/images/icon-minus.svg" alt="plus-icon">
+          </div>
+          <p  id="text-content" class="text-Purple-600">Frontend Mentor offers realistic coding challenges to help developers improve their
+            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+            all levels and ideal for portfolio building.</p>
+          <div class=" border-Purple-100 border-[1px] mx-1"></div>
+        </div>
+        <div class="space-y-5">
+          <div class="sign flex justify-between items-center">
+            <p class="font-semibold lg:text-[18px] text-Purple-950 hover:text-hover cursor-pointer">Is Frontend Mentor
+              free?</p>
+            <img src="./assets/images/icon-plus.svg" alt="plus-icon">
+          </div>
+          <p id="text-content" class="text-Purple-600 hidden">Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+            option providing access to a range of projects suitable for all skill levels.</p>
+          <div class=" border-Purple-100 border-[1px] mx-1"></div>
+        </div>
+        <div class="space-y-5">
+          <div class="sign flex justify-between items-center">
+            <p class="font-semibold lg:text-[18px] text-Purple-950 hover:text-hover cursor-pointer">Can I use Frontend
+              Mentor projects in my portfolio?</p>
+            <img src="./assets/images/icon-plus.svg" alt="plus-icon">
+          </div>
+          <p id="text-content" class="text-Purple-600 hidden">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an
+            excellent
+            way to showcase your skills to potential employers!</p>
+          <div class=" border-Purple-100 border-[1px] mx-1"></div>
+        </div>
+        <div class="space-y-5">
+          <div class="sign flex justify-between items-center">
+            <p class="font-semibold lg:text-[18px] text-Purple-950 hover:text-hover cursor-pointer">How can I get help if
+              I'm stuck on a Frontend Mentor challenge?</p>
+            <img src="./assets/images/icon-plus.svg" alt="plus-icon">
+          </div>
+          <p id="text-content" class="text-Purple-600 hidden">The best place to get help is inside Frontend Mentor's Discord community. There's a
+            help
+            channel where you can ask questions and seek support from other community members.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
