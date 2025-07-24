@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <script src="./script.js" defer></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body class="font-overpass flex items-center justify-center min-h-screen bg-grey-950 mx-6">
+  <main class="bg-grey-900 rounded-3xl lg:p-8 max-w-sm p-6">
+    <div class=" lg:h-[50px] lg:w-[50px]  h-[40px] w-[40px]  roundMobile mb-6">
+      <img src="./images/icon-star.svg" alt="star-icon">
+    </div>
+    <h1 class="text-White lg:text-3xl font-medium mb-4 text-2xl">How did we do?</h1>
+    <p class="text-[15px] text-grey-500 mb-4"> Please let us know how we did with your support request. All feedback is
+      appreciated
+      to help us improve our offering!</p>
+    <ul id="rating-container" class="flex justify-between text-grey-500 mt-5">
+      <li class="roundMobile h-[40px] w-[40px] lg:h-[50px] lg:w-[50px]   hoverOrange">1</li>
+      <li class="roundMobile lg:h-[50px] lg:w-[50px]  h-[40px] w-[40px]  hoverOrange">2</li>
+      <li class="roundMobile lg:h-[50px] lg:w-[50px] h-[40px] w-[40px]   hoverOrange">3</li>
+      <li class="roundMobile lg:h-[50px] lg:w-[50px] h-[40px] w-[40px]   hoverOrange">4</li>
+      <li class="roundMobile  lg:h-[50px] lg:w-[50px]  h-[40px] w-[40px] hoverOrange ">5</li>
+    </ul>
+    <button id="sumbit"
+      class="w-full rounded-full bg-Orange-500  py-[10px] font-semibold lett tracking-widest mt-6 hover:bg-White hover:cursor-pointer">
+        SUBMIT</button>
+  </main>
+</body>
+
+</html>

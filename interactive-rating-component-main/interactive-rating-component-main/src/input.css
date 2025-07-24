@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+    --font-overpass: "Overpass", sans-serif;
+    --color-White: hsl(0, 100%, 100%);
+    --color-grey-500: hsl(217, 12%, 63%);
+    --color-grey-900: hsl(213, 19%, 18%);
+    --color-grey-950: hsl(216, 12%, 8%);
+    --color-Orange-500: hsl(25, 97%, 53%);
+}
+
+
+.roundMobile {
+    @apply  flex items-center justify-center rounded-full bg-gray-600
+
+}
+
+.ratingHover {
+    @apply hover:bg-White bg-White  text-grey-950 
+}
+
+.hoverOrange {
+    @apply hover:bg-Orange-500 hover:cursor-pointer hover:text-grey-950 transition ease-in
+}
