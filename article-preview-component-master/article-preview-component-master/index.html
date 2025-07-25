@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Article preview component</title>
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./src/output.css">
+
+</head>
+
+<body class="font-manrope flexC mx-6 bg-Light-Grayish-Blue min-h-screen ">
+  <main class="rounded-lg overflow-hidden flex flex-col relative top-[18px] lg:top-0 lg:flex-row lg:w-3xl">
+    <div class="image w-full lg:w-[40vw] object-cover object-[30px]">
+      <img src="./images/drawers.jpg" class="w-full h-full  lg:rounded-tl-lg lg:rounded-bl-lg" alt="drawers">
+    </div>
+    <section
+      class="content-container bg-white px-5 relative top-[-38px] lg:w-[60vw] lg:top-0 rounded-b-lg lg:rounded-none">
+      <h2 class="font-semibold text-Very-Dark-Grayish-Blue mt-7 lg:text-xl">Shift the overall look and feel by adding
+        these
+        wonderful
+        touches to furniture in your home</h2>
+      <p class="text-Desaturated-Dark-Blue text-sm mt-2.5">
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.
+      </p>
+      <div class="about-person-container flex justify-between items-center mt-5 mb-3">
+        <div class="about-person flexC">
+          <img src="./images/avatar-michelle.jpg" alt="" class="rounded-full w-[40px] h-[40px]">
+          <div class="person-name flex flex-col justify-between ml-3">
+            <p class="text-Very-Dark-Grayish-Blue">Michelle Appleton</p>
+            <p class="text-Grayish-Blue">28 Jun 2020</p>
+          </div>
+        </div>
+        <div class="share bg-Light-Grayish-Blue w-[35px] h-[35px] rounded-full flexC">
+        <svg width="15" height="13" class="fill-Very-Dark-Grayish-Blue">
+          <path
+            d="M15 6.495 8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+        </svg>
+      </div>
+      </div>
+    </section>
+    <section
+      class="slider bg-Very-Dark-Grayish-Blue  w-full justify-between px-5 py-4 absolute bottom-[38px] rounded-b-lg hidden">
+      <div class="flexC ">
+        <p class="text-Desaturated-Dark-Blue tracking-[4px] mr-4.5">SHARE</p>
+        <div class="share-icons flex gap-3.5">
+          <img src="./images/icon-facebook.svg" alt="facebook">
+          <img src="./images/icon-twitter.svg" alt="twitter">
+          <img src="./images/icon-pinterest.svg" alt="pinterest">
+        </div>
+      </div>
+      <div class="share bg-Desaturated-Dark-Blue w-[35px] h-[35px] rounded-full flexC">
+        <svg width="15" height="13" class="fill-white ">
+          <path
+            d="M15 6.495 8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+        </svg>
+      </div>
+    </section>
+  </main>
+  <section class="desktop-share bg-Very-Dark-Grayish-Blue absolute bottom-[180px] right-[67px]  py-2 px-6 rounded-xl hidden">
+    <div class="flex">
+      <p class="text-Desaturated-Dark-Blue tracking-[4px] mr-2.5">SHARE</p>
+      <div class="share-icons ">
+        <img src="./images/icon-facebook.svg" alt="facebook" class="inline-block mr-1">
+        <img src="./images/icon-twitter.svg" alt="twitter" class="inline-block mr-1">
+        <img src="./images/icon-pinterest.svg" alt="pinterest" class="inline-block">
+      </div>
+    </div>    
+    <div class="p-1.5 absolute bottom-[-6px] left-[50%] rotate-45
+    bg-Very-Dark-Grayish-Blue "></div>
+  </section>
+
+
+</body>
+
+</html>
