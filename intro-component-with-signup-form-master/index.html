@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
+  <script src="./script.js" defer></script>
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body
+  class="md:bg-[url('../images/bg-intro-desktop.png')] bg-[url('../images/bg-intro-mobile.png')] bg-no-repeat bg-cover bg-Red-400 ">
+  <main
+    class="md:flex md:justify-center md:items-center md:flex-row flex flex-col text-center justify-center min-h-screen md:max-w-5xl md:mx-auto mx-6">
+    <section
+      class="md:flex md:justify-center md:items-center flex-col md:w-1/2 text-white md:mr-8 mt-25  md:mt-0  md:mb-0 mb-13">
+      <h1 class="md:text-[45px] text-[28px] leading-8 md:leading-10.5 font-bold mb-6">Learn to code by watching others
+      </h1>
+      <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable. </p>
+    </section>
+    <section class="md:w-1/2 flex flex-col md:my-10">
+      <button id="buy-btn"
+        class="md:w-full text-center py-2.5 px-12 bg-Purple-700 text-white font-medium rounded-lg md:shadow-custom shadow-custom-mobile mb-5">
+        Try it free 7 days <span class="text-Purple-350">then $20/mo. thereafter</span>
+      </button>
+      <form
+        class="bg-white md:p-10 space-y-7 flex flex-col rounded-lg md:shadow-custom shadow-custom-mobile p-6 md:mb-0 mb-15 ">
+        <div class="flex flex-col relative">
+          <input type="text"  placeholder="First Name" class="inputStyle ring-Purple-350 ring focus:border-Purple-700 focus:outline-Purple-700 h-12">
+          <p class="self-end text-[14px] italic mt-1 text-Red-400 font-medium hidden absolute bottom-[-22px]">First Name cannot be empty</p>
+        </div>
+        <div class="flex flex-col relative">
+          <input type="text" placeholder="Last Name " class="inputStyle ring-Purple-350 ring focus:border-Purple-700 focus:outline-Purple-700 ">
+          <p class="self-end text-[14px] italic mt-1 text-Red-400 font-medium hidden absolute bottom-[-22px]">Last Name cannot be empty</p>
+        </div>
+        <div class="flex flex-col relative">
+          <input type="email" placeholder="Email Address" class="inputStyle ring-Purple-350 ring focus:border-Purple-700 focus:outline-Purple-700">
+           <p class="self-end text-[14px] italic mt-1 text-Red-400 font-medium hidden absolute bottom-[-22px]">Looks like this is not an email</p>
+        </div>
+        <div class="flex flex-col relative">
+          <input type="password" placeholder="Password" class="inputStyle ring-Purple-350 ring focus:outline-Purple-700 focus:outline-Purple-700 ">
+           <p class="self-end text-[14px] italic mt-1 text-Red-400 font-medium hidden absolute bottom-[-22px]">Password cannot be empty</p>
+        </div>
+        <button id="free-trail-btn"
+          class="uppercase w-full text-center md:py-3 md:px-0 bg-Green-400 text-gray-100 md:tracking-widest font-medium md:rounded-lg  mb-4 mt-1 py-3 rounded-sm hover:bg-[#77E2B4] hover:cursor-pointer">Claim
+          your free trial </button>
+        <p class="text-Purple-350 text-[12px] text-center font-semibold">By clicking the button you are agreeing to our
+          <span class="text-Red-400 font-bold">Terms and Services</span>
+        </p>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
