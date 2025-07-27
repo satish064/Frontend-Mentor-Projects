@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@theme {
+    --color-font-poppins: "Poppins", sans-serif;
+    /* Primary Color */
+    --color-Red-400: hsl(0, 100%, 74%);
+    --color-Green-400: hsl(154, 59%, 51%);
+    /* Accent */
+    --color-Purple-700: hsl(248, 32%, 49%);
+    /* Neutral */
+    --color-Gray-900: hsl(249, 10%, 26%);
+    --color-Purple-350: hsl(246, 25%, 77%);
+
+
+    --shadow-custom: 0 8px #DB6666;
+
+    --shadow-custom-mobile: 0 5px #DB6666
+}
+
+
+.inputStyle {
+    @apply px-6 py-3 rounded-sm font-semibold 
+}
+
+.input-with-icon {
+    @apply bg-[url('/intro-component-with-signup-form-master/intro-component-with-signup-form-master/images/icon-error.svg')] bg-no-repeat bg-right bg-origin-content
+}
