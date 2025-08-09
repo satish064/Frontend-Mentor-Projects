@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
+  <script src="./script.js" defer></script>
+  <title>Frontend Mentor | Product list with cart</title>
+
+</head>
+
+<body class="bg-Rose-50 flex-center">
+  <main class="mt-10 font-radHat md:flex justify-center md:max-w-7xl gap-6 mx-4">
+    <section class="md:w-[70%]">
+      <h1 class="text-4xl font-semibold mb-7">Desserts</h1>
+      <div id="item-container" class="grid lg:grid-cols-3 md:grid-cols-2 gap-y-8 gap-x-6">
+      </div>
+    </section>
+    <section class="bg-white md:w-[30%] self-start p-6 rounded-lg my-8 lg:my-0 ">
+      <p class="text-2xl font-bold text-Red">Your Card (<span class="card-count">0</span>)</p>
+      <section class="add-to-card-container">
+      </section>
+      <section class="button-footer hidden">
+        <article class="flex items-center justify-between">
+          <p class="font-medium text-Rose-900">Order Total</p>
+          <p class="text-2xl font-bold text-Rose-900 ">$<span class="total-price"></span>
+          </p>
+        </article>
+        <div class="bg-Rose-100 py-3 flex-center rounded-lg my-5">
+          <img src="./assets/images/icon-carbon-neutral.svg" alt="icon-carbon-neutral" class="mr-2">
+          <p class="text-Rose-500">This is a <span class="font-semibold text-Rose-500">carbon-neutral</span> delivery
+          </p>
+        </div>
+        <button class="bg-Red text-white font-medium text-center py-3 w-full rounded-full confirm-order-btn hover:text-Red hover:bg-white hover:ring-2 hover:ring-Red hover:font-medium transition-all duration-350 ease-in-out">Confirm
+          Order</button>
+      </section>
+      <section class="my-8 empty-card">
+        <div class="flex-center">
+          <img src="./assets/images/illustration-empty-cart.svg" alt="">
+        </div>
+        <p class="text-center font-semibold text-Rose-400">Your added items will appear here</p>
+      </section>
+      <dialog
+        class="popup modal-popover w-[500px] max-w-full p-6 rounded-lg max-h-[80vh] overflow-y-auto lg:m-auto mt-auto scrollbar-width">
+        <img src="./assets/images/icon-order-confirmed.svg" alt="order-confirmed" class="mb-4">
+        <h3 class="text-4xl font-bold">Order Confirmed</h3>
+        <p class="text-Rose-400 mt-2">We hope you enjoy your food!</p>
+        <article class="popup-item-container pt-4 pl-4 pr-4 rounded-t-md bg-Rose-50 w-full mt-5"></article>
+        <div class="flex justify-between items-center rounded-b-md bg-Rose-50 w-full pb-3 pr-4 pl-4 pt-4">
+          <p>Order Total</p>
+          <p class="text-2xl font-bold text-Rose-900 popup-order-total-price"><span>$</span>46.50</p>
+        </div>
+        <button class="start-new-order-btn bg-Red text-white font-medium text-center  w-full rounded-full py-3 mt-4 hover:text-Red hover:bg-white hover:ring-2 hover:ring-Red hover:font-medium transition-all duration-350 ease-in-out">Start New
+          Order</button>
+      </dialog>
+    </section>
+  </main>
+</body>
+
+</html>
