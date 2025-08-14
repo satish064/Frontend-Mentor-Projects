@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js" type="module" defer></script>
+    <title>Reset Api</title>
+</head>
+
+<body class="font-Nunito">
+    <nav class="shadow lg:py-4 lg:mb-6 py-6 px-4">
+        <div class="flex justify-between items-center max-w-6xl mx-auto">
+            <h1 class="lg:text-2xl font-semibold text-lg hover:cursor-pointer"><a href="#">Where in the world?</a></h1>
+            <p class="theme-changer font-medium hover:cursor-pointer"><i class="fa-regular fa-moon"></i>&nbsp;&nbsp;Dark Mode</p>
+        </div>
+    </nav>
+    <main class="mx-auto max-w-6xl">
+        <section id="search-and-filter" class="justify-between flex flex-col lg:flex-row mx-6">
+            <div class="search-container py-3 lg:pl-6 rounded-lg  shadow lg:w-102 relative max-[500px]:mt-8">
+                <div class="flex items-center">
+                    <label for="input" class="max-[500px]:pl-8 ">
+                        <i class="fa-solid fa-magnifying-glass mr-3"></i>
+                    </label>
+                    <input type="text" placeholder="Search for a country..." class="outline-none w-full placeholder:text-inherit" id="input">
+                </div>
+                <div class="auto-search-container absolute bg-white w-full left-0 shadow rounded-b-lg px-3">
+                    <div class="border-b-gray-50 border my-2 hidden"></div>
+                    <div class="auto-search-items-container"></div>
+                </div>
+            </div>
+
+            <select class="filter-by-region outline-none px-4 py-4 shadow max-[400px]:w-[50vw] max-[500px]:mt-6">
+                <option hidden>Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </section>
+        <section class="country-details-container grid grid-cols-1 lg:grid-cols-4 mt-8 gap-10 mx-12">
+
+        </section>
+    </main>
+</body>
+
+</html>
